@@ -1,6 +1,6 @@
 # Mathematical Calculations using JavaScript
 ## AIM:
-To design a website to calculate the area of a circle and volume of a cylinder using JavaScript.
+To design a website to calculate the area of a triangle and volume of a cylinder using JavaScript.
 
 ## DESIGN STEPS:
 ### Step 1: 
@@ -21,8 +21,107 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 
+### Area of triangle:
+```
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Area of triangle</title>
+    <link rel="stylesheet" href="{% static 'css/mathadd.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formview">
+            <div class="banner">
+               AREA OF TRIANGLE
+            </div>
+            <div class="content">
+                <form action="" method="GET">
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="value_a">Base=</label>
+                        <input type="text" name="value_a" id="value_a">
+                    </div>
+                    <div  class="forminput">
+                        <label for="value_b">Height=</label>
+                        <input type="text" name="value_b" id="value_b">
+                    </div>                     
+                    <div class="forminput">
+                        <button type="button" name="button_add" id="button_add">Calulate</button>
+                    </div>
+                    <div class="forminput">
+                        <label for="value_c">Area=</label>
+                        <input type="text" name="value_c" id="value_c" readonly>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/mathadd.js"></script>
+</body>
+
+</html>
+```
+
+### Volume of cylinder
+```
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VOLUME OF THE CYLINDER</title>
+    <link rel="stylesheet" href="{% static 'css/mathadd.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formview">
+            <div class="banner">
+                VOLUME OF THE CYLINDER
+            </div>
+            <div class="content">
+                <form action="" method="GET">
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="value_a">Base=</label>
+                        <input type="text" name="value_a" id="value_a">
+                    </div>
+                    <div  class="forminput">
+                        <label for="value_b">Height=</label>
+                        <input type="text" name="value_b" id="value_b">
+                    </div>                    
+                    <div class="forminput">
+                        <button type="button" name="button_add" id="button_add">Calculate</button>
+                    </div>
+                    <div  class="forminput">
+                        <label for="value_c">Volume=</label>
+                        <input type="text" name="value_c" id="value_c" readonly>
+                    </div>                   
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/mathvolume.js"></script>
+</body>
+
+</html>
+```
 
 ## OUTPUT:
+![output](./static/img/Aot.png)
+
+![output](./static/img/Voc.png)
+
+## VALIDATOR:
+![output](./static/img/Aot-validator.png)
+
+![output](./static/img/Voc-validator.png)
 
 
 ## RESULT:
+Thus a website is designed for Area of trangle is hosted in the URL http://vincent.student.saveetha.in:8000/mathadd/
+and Volume of cylinder is hosted in the URL http://vincent.student.saveetha.in:8000/mathvolume/ HTML code is validated.
