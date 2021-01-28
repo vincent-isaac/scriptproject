@@ -21,7 +21,7 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 
-### Area of triangle:
+### mathadd.html:
 ```
 {% load static %}
 <!DOCTYPE html>
@@ -66,7 +66,7 @@ Publish the website in the given URL.
 </html>
 ```
 
-### Volume of cylinder
+### mathvolume.html:
 ```
 {% load static %}
 <!DOCTYPE html>
@@ -109,6 +109,45 @@ Publish the website in the given URL.
 </body>
 
 </html>
+```
+
+## JAVA SCRIPT:
+
+### mathadd.js:
+```
+addBtn = document.querySelector('#button_add');
+
+addBtn.addEventListener('click',function(e){
+
+    txtA = document.querySelector('#value_a');
+    txtB = document.querySelector('#value_b');
+    txtC = document.querySelector('#value_c');
+
+    let c ;
+
+    c = 1/2 * parseFloat(txtA.value) * parseFloat(txtB.value) ;
+
+    txtC.value = c;
+});
+```
+
+### mathvolume.js:
+```
+result_button = document.querySelector('#button_add');
+
+result_button.addEventListener('click', function(e){
+
+    txta = document.querySelector('#value_a');
+    txtb = document.querySelector('#value_b');
+    txtc = document.querySelector('#value_c');
+    
+    let c;
+
+    c = 22/7 * parseFloat(txta.value**2) * parseFloat(txtb.value);
+
+    txtc.value = c;
+
+});
 ```
 
 ## OUTPUT:
