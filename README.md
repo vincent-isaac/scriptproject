@@ -112,14 +112,14 @@ Publish the website in the given URL.
 ```
 
 ## OUTPUT:
-![output](./static/img/Aot.png)
+![output](./static/img/Aot.PNG)
 
-![output](./static/img/Voc.png)
+![output](./static/img/Voc.PNG)
 
 ## VALIDATOR:
-![output](./static/img/Aot-validator.png)
+![output](./static/img/Aot-validator.PNG)
 
-![output](./static/img/Voc-validator.png)
+![output](./static/img/Voc-validator.PNG)
 
 
 ## RESULT:
